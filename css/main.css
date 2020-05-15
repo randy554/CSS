@@ -16,6 +16,12 @@ body > div {
   width:100%;
 }
 
+body > nav {
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+}
+
 /* Don't show back to lightmode link */
 a[data-light] {
   display: none;
@@ -24,6 +30,11 @@ a[data-light] {
 /* Darkmode toggle */
 a[data-dark] {
   color: var(--darkmode-elements);
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
 }
 
 /* body > div > aside:nth-child(3) > img:nth-child(1) */
