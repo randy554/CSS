@@ -163,7 +163,7 @@ body:target a[data-light] {
 }
 
 body:target img[data-light]{
-  display: block;
+  display: none;
 }
 
 body:target footer > img {
@@ -190,7 +190,6 @@ main > div > svg {
 
 body > header {
   text-align: center;
-  /* animation: spinningHeader 3s ease-in-out infinite; */
   display: flex;
 }
 
@@ -232,26 +231,6 @@ body > header > div > h1 {
   /* animation: SpecialSpinningHeader 3s ease-in-out infinite forwards alternate; */
 }
 
-/* @keyframes SpecialSpinningHeader {
-  0% {
-    transform: rotateY(0);
-  }
-  25% {
-    transform: rotateY(180deg);
-  }
-  50% {
-    transform: rotateY(270deg);
-  }
-  75% {
-    transform: rotateY(360deg);
-  }
-  100% {
-    transform: rotateY(0);
-    color: var(--lightmode-background);
-  }
-} */
-
-div > aside > div >
 
 body > header > div > p {
   font-family: 'Krona One', sans-serif;
@@ -280,7 +259,7 @@ body > div > aside:nth-child(3) {
   order: 3;
 }
 
-/* #darkmode > div:nth-child(2) > aside:nth-child(2) > a:nth-child(1) > img:nth-child(2) */
+
 /* Knife tool turn on hover */
 body > div > aside:nth-child(1) > a:nth-child(1) > img:hover {
   transform: rotate(-20deg);
@@ -349,9 +328,6 @@ body > div > aside:nth-child(5) > div > div > p {
 /* Floating burger */
 /* Darkmode burger */
 body > div > main > div:nth-child(1) > img, body > div > main > div:nth-child(2) > img {
-  /* position: fixed;
-  top: 10%;
-  left: 20%; */
   animation: floatBurger 2s ease-in-out infinite;
 }
 
@@ -513,8 +489,6 @@ svg {
 
 @keyframes moveHotDog {
   0% { transform: translateX(0);}
-  /* 50% { transform: translate(25%, -5%);} */
-  /* 100% { transform: translate(50%, -10%);} */
   100% { transform: translateX(2px);}
 }
 
