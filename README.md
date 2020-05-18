@@ -70,6 +70,7 @@ Aan deze opdracht zijn de volgende leerdoelen verbonden:
     img[src^="images/darkmode"]
     :nth-child(3)
     img:nth-child(3):hover
+    border-radius
 
 
 # Verlanglijst
