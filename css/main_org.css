@@ -6,23 +6,20 @@ body  {
   --darkmode-background:  #2F2F2F;
   --lightmode-background: #FFBC3A;
   --darkmode-elements: #BA8AF9;
-  --header-light-background: #FBAE18;
   background-color: var(--lightmode-background);
-  --darkmode-lighter-background: #404040;
 }
 
 body > div {
-  /*display: flex;*/
-  /*justify-content: space-between;*/
-  /*height: 100%;*/
-  /*width:100%;*/
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width:100%;
 }
 
 body > nav {
   display: flex;
   justify-content: center;
   padding: 2em;
-  background-color: var(--header-light-background);
 }
 
 /* Don't show back to lightmode link */
@@ -33,9 +30,6 @@ a[data-light] {
 /* Darkmode toggle */
 a[data-dark] {
   color: var(--darkmode-elements);
-  padding: 0.5em;
-  text-transform: capitalize;
-  font-size: 1.2em;
 }
 
 h2 {
@@ -44,60 +38,6 @@ h2 {
 }
 
 /* body > div > aside:nth-child(3) > img:nth-child(1) */
-body > div > header:nth-child(2) {
-  display: flex;
-  justify-content: center;
-  padding: 1em;
-  color: white;
-}
-
-body > div > header:nth-child(2) > p {
-  background-color: brown;
-  padding: 0.9em 6em;
-}
-
-
-
-body > div > header:nth-child(4) {
-  margin-top: 12em;
-  display: flex;
-  justify-content: center;
-  padding: 1em;
-  color: white;
-}
-
-body > div > header:nth-child(4) > p {
-  background-color: brown;
-  padding: 0.9em 6em;
-}
-
-body > div > header:nth-child(6) {
-  margin-top: 5em;
-  display: flex;
-  justify-content: center;
-  padding: 1em;
-  color: white;
-}
-
-body > div > header:nth-child(6) > p {
-  background-color: brown;
-  padding: 0.9em 6em;
-}
-
-div > aside:first-of-type {
-  display: flex;
-  justify-content: center;
-}
-
-div > aside:first-of-type > a {
-  margin: 2em 1em;
-  /*background-image: url("../images/fire_klaar.png");*/
-  /*background-repeat: no-repeat;*/
-  /*background-size: contain;*/
-  /*background-position: bottom;*/
-  width: 100;
-  height: 15em;
-}
 
 body:target div[data-dark] {
   /* display: block; */
@@ -130,36 +70,11 @@ body:target aside > a > img {
 /* JA MAN */
 aside > a > img[data-dark], aside > img[data-dark] {
   display: block;
-  background-color: var(--header-light-background);
-  padding: 1em;
-  margin-left: 1em;
-  margin-right: 1em;
-}
-
-/* JA MAN */
-aside > a > svg[data-dark], aside > svg[data-dark] {
-  display: block;
-  background-color: var(--header-light-background);
-  padding: 1em;
-  margin-left: 1em;
-  margin-right: 1em;
-}
-
-aside > a > svg[data-dark], aside > svg[data-dark] {
-  display: block;
-  background-color: var(--header-light-background);
-  padding: 1em;
-  margin-left: 1em;
-  margin-right: 1em;
 }
 
 body:target a[data-light] {
   display: block;
-  color: var(--darkmode-background);
-  background-color: var(--lightmode-background);
-  padding: 0.5em;
-  text-transform: capitalize;
-  font-size: 1.2em;
+  color: var(--lightmode-background);
 }
 
 body:target img[data-light]{
@@ -179,11 +94,6 @@ body:target footer > img[data-light] {
 body > div > main > div > img {
   width: 6em;
   height: 6em;
-}
-
-main > div > svg {
-  width: 100%;
-  height: 100%;
 }
 
 /* -------------------- Header -------------------------- */
@@ -225,10 +135,9 @@ body > header > div > h1 {
   margin: 0;
   color: #A93028;
   text-shadow: 2px 2px #583D34;
-  font-size: 4em;
+  font-size: 3em;
   font-family: 'Fredoka One', cursive;
   text-transform: uppercase;
-  padding-top: 0.3em;
   /* animation: SpecialSpinningHeader 3s ease-in-out infinite forwards alternate; */
 }
 
@@ -251,8 +160,6 @@ body > header > div > h1 {
   }
 } */
 
-div > aside > div >
-
 body > header > div > p {
   font-family: 'Krona One', sans-serif;
   margin-top: 0;
@@ -266,12 +173,6 @@ aside > img, aside > a > img {
   height: 10em;
 }
 
-aside > svg, aside > a > svg {
-  width: 10em;
-  height: 10em;
-  margin: 2em 1em;
-}
-
 body > div > aside:nth-child(2) {
   order: 1;
 }
@@ -282,11 +183,7 @@ body > div > aside:nth-child(3) {
 
 /* #darkmode > div:nth-child(2) > aside:nth-child(2) > a:nth-child(1) > img:nth-child(2) */
 /* Knife tool turn on hover */
-body > div > aside:nth-child(1) > a:nth-child(1) > img:hover {
-  transform: rotate(-20deg);
-}
-
-body > div > aside:nth-child(1) > a:nth-child(1) > svg:hover {
+body > div > aside:nth-child(2) > a:nth-child(1) > img:hover {
   transform: rotate(-20deg);
 }
 
@@ -307,12 +204,7 @@ head:target ~ body:active {
 }
 
 /* Hammer tool turn on hover */
-body > div > aside:nth-child(1) > a:nth-child(2) > img:hover {
-  transform: rotate(-20deg);
-}
-
-/* Hammer tool turn on hover */
-body > div > aside:nth-child(1) > a:nth-child(2) > svg:hover {
+body > div > aside:nth-child(2) > a:nth-child(2) > img:hover {
   transform: rotate(-20deg);
 }
 
@@ -326,24 +218,6 @@ body > div > aside:nth-child(3) > img:nth-child(1):hover, body > div > aside:nth
 /* Mayonnaise  turn on hover darkmode */
 body > div > aside:nth-child(3) > img:nth-child(3):hover, body > div > aside:nth-child(3) > img:nth-child(4):hover {
   transform: rotate(-20deg);
-}
-
-body > div > aside:nth-child(5) {
-  display: flex;
-  justify-content: center;
-  margin-top: 5em;
-}
-
-body > div > aside:nth-child(5) > div > div {
-  text-align: center;
-  padding: 1em;
-  border-radius: 38% 62% 24% 76% / 30% 30% 70% 70%;
-  font-weight: bold;
-  font-size: 1.2em;
-}
-
-body > div > aside:nth-child(5) > div > div > p {
-  /*text-align: center;*/
 }
 
 /* Floating burger */
@@ -425,7 +299,6 @@ body > div > main > div:nth-child(10) > img, body > div > main > div:nth-child(1
 body > footer {
   display: flex;
   justify-content: center;
-  margin-top: 10em;
 }
 
 /* Footer */
@@ -443,18 +316,15 @@ main {
   order: 2;
   justify-content: center;
   align-content: center;
-  margin-top: 5em;
 }
 
 main > div {
   display: flex;
   justify-content: center;
-  background-color: #b5471463;
+  background-color: green;
+  /* width: 392px; */
   width: 250px;
-  height: 250px;
-  margin: 10px;
-  flex-wrap: wrap;
-  border-radius: 63% 37% 70% 30% / 41% 85% 15% 59%;
+  border: 1px solid black;
 }
 
 main > span > img {
@@ -467,10 +337,7 @@ main > span > img {
 }
 
 svg {
-  /*width: 34%;*/
-  width: 10em;
-  height: 10em;
-  margin: 2em 1em;
+  width: 34%;
 }
 
 /* -------------------- Hot dog -------------------------- */
@@ -488,15 +355,11 @@ svg {
   background-repeat: no-repeat;
   position: relative;
   z-index: 2;
-  top: 6em;
+  top: 100%;
+  left: -35%;
   background-size: 7em auto;
-  width: 100%;
-  background-color: #b5471463;
+  width: 7em;
   text-decoration: underline overline;
-  background-position: center;
-  text-align: center;
-  padding: 1em;
-  border-radius: 38% 62% 24% 76% / 30% 30% 70% 70%;
 }
 
 #prijs3 p {
@@ -539,15 +402,11 @@ svg {
   background-repeat: no-repeat;
   position: relative;
   z-index: 2;
-  top: 6em;
+  top: 100%;
+  left: -35%;
   background-size: 7em auto;
-  width: 100%;
-  background-color: #b5471463;
+  width: 7em;
   text-decoration: underline overline;
-  background-position: center;
-  text-align: center;
-  padding: 1em;
-  border-radius: 38% 62% 24% 76% / 30% 30% 70% 70%;
 }
 
 #prijs2 p {
@@ -577,15 +436,11 @@ svg {
   background-repeat: no-repeat;
   position: relative;
   z-index: 2;
-  top: 6em;
+  top: 100%;
+  left: -35%;
   background-size: 7em auto;
-  width: 100%;
-  background-color: #b5471463;
+  width: 7em;
   text-decoration: underline overline;
-  background-position: center;
-  text-align: center;
-  padding: 1em;
-  border-radius: 38% 62% 24% 76% / 30% 30% 70% 70%;
 }
 
 #prijs4 p {
@@ -610,20 +465,19 @@ svg {
 }
 
 #burger:focus polygon.cheese_1, #burger:focus ~ #prijs1 {
-  display: block;
+  fill: var(--darkmode-elements);
   background-image: url("../images/bakje.png");
   background-repeat: no-repeat;
+  display: block;
   position: relative;
   z-index: 2;
-  top: 6em;
+  top: 100%;
+  left: -35%;
+  /* top: 9em;
+  left: -5em;   */
   background-size: 7em auto;
-  width: 100%;
-  background-color: #b5471463;
+  width: 7em;
   text-decoration: underline overline;
-  background-position: center;
-  text-align: center;
-  padding: 1em;
-  border-radius: 38% 62% 24% 76% / 30% 30% 70% 70%;
 }
 
 #prijs1 p {
@@ -647,84 +501,4 @@ svg {
 
 #prijs1, #prijs2, #prijs3, #prijs4 {
   display: none;
-}
-
-.food_tags {
-  font-size: 2em;
-  font-weight: bolder;
-  background-color: black;
-  color: brown;
-  padding: 0.2em 0.5em;
-  border-top: 3px solid red;
-  border-bottom: 3px solid red;
-}
-
-div > section:nth-child(7){
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 5em;
-}
-
-section > svg {
-  width: 10em;
-  height: 10em;
-}
-
-section > div[data-dark] {
-  display: flex;
-  justify-content: center;
-  background-color: #b5471463;
-  width: 250px;
-  height: 250px;
-  flex-wrap: wrap;
-  border-radius: 63% 37% 70% 30% / 41% 85% 15% 59%;
-  margin: 10px;
-}
-/* COLA */
-section > div[data-dark]:nth-child(1) > div > p {
-  font-weight: bold;
-  font-size: 1.2em;
-  color: red;
-}
-
-/* SPRITE */
-section > div[data-dark]:nth-child(2) > div > p {
-  font-weight: bold;
-  font-size: 1.2em;
-  color: green;
-}
-
-/* FANTA */
-section > div[data-dark]:nth-child(3) > div > p {
-  font-weight: bold;
-  font-size: 1.2em;
-  color: #fbc460;
-}
-
-/* MILKSHAKE */
-section > div[data-dark]:nth-child(4) > div > p {
-  font-weight: bold;
-  font-size: 1.2em;
-  color: deeppink;
-}
-
-#cola {
-  fill: red;
-  margin: 2em 1em 0;
-}
-
-#sprite {
-  fill: green;
-  margin: 2em 1em 0;
-}
-
-#fanta {
-  fill: #fbc460;
-  margin: 2em 1em 0;
-}
-
-#milkshake {
-  fill: deeppink;
-  margin: 2em 1em 0;
 }
