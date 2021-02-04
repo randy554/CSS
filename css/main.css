@@ -9,6 +9,8 @@ body  {
   --header-light-background: #FBAE18;
   background-color: var(--lightmode-background);
   --darkmode-lighter-background: #404040;
+  --darkmode-secondary-color: #464748;
+  --darkmode-tools-background1: #5a5a5a;
 }
 
 body > div {
@@ -23,6 +25,7 @@ body > nav {
   justify-content: center;
   padding: 2em;
   background-color: var(--header-light-background);
+  /*background-color: var(--darkmode-lighter-background);*/
 }
 
 /* Don't show back to lightmode link */
@@ -32,7 +35,8 @@ a[data-light] {
 
 /* Darkmode toggle */
 a[data-dark] {
-  color: var(--darkmode-elements);
+  color: var(--darkmode-background);
+  background-color: var(--lightmode-background);
   padding: 0.5em;
   text-transform: capitalize;
   font-size: 1.2em;
@@ -91,10 +95,11 @@ div > aside:first-of-type {
 
 div > aside:first-of-type > a {
   margin: 2em 1em;
-  /*background-image: url("../images/fire_klaar.png");*/
+  /*background-image: url("../images/flame_yellow.png");*/
   /*background-repeat: no-repeat;*/
   /*background-size: contain;*/
   /*background-position: bottom;*/
+  /*background-color: var(--lightmode-background);*/
   width: 100;
   height: 15em;
 }
@@ -147,16 +152,28 @@ aside > a > svg[data-dark], aside > svg[data-dark] {
 
 aside > a > svg[data-dark], aside > svg[data-dark] {
   display: block;
-  background-color: var(--header-light-background);
+  background-color: var(--lightmode-background);
+  background-image: url("../images/flame_yellow.png");
+  background-repeat: no-repeat;
   padding: 1em;
   margin-left: 1em;
   margin-right: 1em;
 }
 
+body:target nav {
+  background-color: var(--darkmode-lighter-background);
+}
+
+body:target aside a[href="#something"] svg, body:target aside a[href="#head"] svg {
+  background-color: var(--darkmode-tools-background2);
+  background-image: url("../images/darkmode/flame_gray.png");
+  background-repeat: no-repeat;
+}
+
 body:target a[data-light] {
   display: block;
-  color: var(--darkmode-background);
-  background-color: var(--lightmode-background);
+  color: var(--lightmode-background);
+  background-color: var(--darkmode-background);
   padding: 0.5em;
   text-transform: capitalize;
   font-size: 1.2em;
@@ -269,13 +286,15 @@ body > div > aside:nth-child(1) > a:nth-child(1) > svg:hover {
   transform: rotate(-20deg);
 }
 
+
 html:target > body {
-  cursor: url('../images/knife.png'), auto;
+  cursor: url('../images/knife_bold_opti.png'), auto;
 }
 
 html:target > body:active {
-  cursor: url('../images/knifed.png'), auto;
+  cursor: url('../images/knifed_bold_opti.png'), auto;
 }
+
 
 head:target ~ body {
   cursor: url('../images/Hammer.png'), auto;
@@ -702,3 +721,15 @@ section > div[data-dark]:nth-child(4) > div > p {
   fill: deeppink;
   margin: 2em 1em 0;
 }
+
+/*svg[data-dark-test] {*/
+/*  display: none;*/
+/*}*/
+
+/*#darkmode:target {*/
+/*  !*display: none;*!*/
+/*  background-color: cornflowerblue;*/
+/*  padding: 1em;*/
+/*}*/
+
+
