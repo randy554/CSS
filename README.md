@@ -1,10 +1,13 @@
 # Minor 19-20: CSS to the Rescue (Floating Burgers)
 
-![Floating burger screenshot](https://raw.githubusercontent.com/randy554/css-to-the-rescue-1920/master/images/floating%20burger%20light.png)
+[![Floating burger screenshot](https://i.postimg.cc/KcJB4Jmf/image.png)](https://postimg.cc/Hj8Vh0c8)
 
 ## Dark mode
 
-![Floating burger dark mode screenshot](https://raw.githubusercontent.com/randy554/css-to-the-rescue-1920/master/images/floating%20burger%20dark.png)
+[![Floating burger dark mode screenshot](https://i.postimg.cc/vBjySJWX/image.png)](https://postimg.cc/xJKBXFpb)
+
+[![38ec00922f404b5538bca14e88df3a2c.gif](https://i.postimg.cc/xdLbYSfx/38ec00922f404b5538bca14e88df3a2c.gif)](https://postimg.cc/f3Tbjp0m)
+
 
 # Inhoudsopgave
 
