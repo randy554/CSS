@@ -2,6 +2,8 @@
 
 [![38ec00922f404b5538bca14e88df3a2c.gif](https://i.postimg.cc/xdLbYSfx/38ec00922f404b5538bca14e88df3a2c.gif)](https://postimg.cc/f3Tbjp0m)
 
+## Home page
+
 [![Floating burger screenshot](https://i.postimg.cc/KcJB4Jmf/image.png)](https://postimg.cc/Hj8Vh0c8)
 
 ## Dark mode
